@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <!-- Adicional: Título da página -->
+    <h1>Formulário de cadastro</h1>
+
+    <form action="/submit-form" method="POST">
+        <!-- Campo para nome -->
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        <br><br>
+
+        <!-- Campo para e-mail -->
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" placeholder="Insira seu e-mail">
+        <br><br>
+
+        <!-- Campo para senha -->
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" minlength="8" placeholder="Crie uma senha">
+        <br><br>
+
+        <!-- Campo para informar data de nascimento -->
+        <label for="dataNascimento">Data de nascimento: </label>
+        <input type="date" name="dataNascimento" id="dataNascimento">
+        <br><br>
+
+        <!-- Campo para seleção de interesses -->
+        <input type="checkbox" name="interesses" id="exatas">
+        <label for="interesses">Exatas</label>
+        <input type="checkbox" name="interesses" id="humanas">
+        <label for="interesses">Humanas</label>
+        <input type="checkbox" name="interesses" id="saude">
+        <label for="interesses">Saúde</label>
+        <br><br>
+
+        <!-- Campo para informar o sexo -->
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="sexo" id="masculino">
+        <label for="sexo">Masculino</label>
+        <input type="radio" name="sexo" id="feminino">
+        <label for="sexo">Feminino</label>
+        <input type="radio" name="sexo" id="outro">
+        <label for="sexo">Outro</label>
+        <br><br>
+
+        <!-- Campo para marcar a cidade -->
+        <label for="cidade">Cidade: </label>
+        <select name="cidade" id="cidade">
+            <option value="vazio"></option>
+            <option value="arapiraca">Arapiraca</option>
+            <option value="mcz">Maceió</option>
+            <option value="maragogi">Maragogi</option>        
+            <option value="pdi">Palmeira dos Índios</option>
+            <option value="riolargo">Rio Largo</option>
+        </select>
+        <br><br>
+        
+        <!-- Campo para a quantidade de produtos -->
+        <label for="produtos">Insira a quantidade de produtos que deseja: </label>
+        <input type="number" name="produtos" id="produtos" min="1">
+        <br><br>
+
+        <!-- Campo para observações adicionais -->
+        <textarea name="observacoes" id="observacoes" cols="50" rows="10" placeholder="Caso deseje, insira informações adicionais aqui."></textarea>
+        <br>
+
+        <!-- Adicional: campo com botões para enviar e redefinir as respostas do Formulário -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Redefinir</button>
+    </form>
+</body>
+</html>
